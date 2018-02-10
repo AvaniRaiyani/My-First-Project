@@ -1,0 +1,51 @@
+﻿<ul>
+    <li ng-repeat="secret in controller.secrets">{{secret}}</li>
+</ul>
+
+
+
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'"></span>
+
+        </div>
+
+        <div class="container">
+            <h2>New User</h2><br />
+            If you are a new user, please fill out the form below and we will send you a confirmation email for the completion of the Registration.<br />
+            <h2>Account Information</h2>
+            <label><b>Confirm Email</b></label>
+            <input ng-model="controller.appointment.confirmemail" placeholder="Enter Email" name="email" required><br/>
+
+            <label><b>Password</b></label>
+            <input ng-model="controller.appointment.password" placeholder="Enter Password" name="psw" required><br/>
+
+            <label><b>Confirm Password</b></label>
+            <input ng-model="controller.appointment.confirmpassword" placeholder="Enter Password" name="psw" required><br/>
+
+            <h2>Registration information</h2>
+            <label><b>Gender</b></label>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female<br/>
+            <label><b>BirthDate</b></label>
+            <input ng-model="controller.appointment.birthdate" placeholder="Enter Birthdate" name="bdate" required><br/>
+            <label><b>First Name</b></label>
+            <input ng-model="controller.appointment.firstname" placeholder="Enter First Name" name="firstname" required><br/>
+            <label><b>Last Name</b></label>
+            <input ng-model="controller.appointment.lastname" placeholder="Enter Last Name" name="lastname" required><br/>
+            <label><b>Address 1</b></label>
+            <input ng-model="controller.appointment.address1" placeholder="Enter Address 2" name="add" required><br/>
+            <label><b>Address 2</b></label>
+            <input ng-model="controller.appointment.address2" placeholder="Enter Address 2" name="add" required><br/>
+            <label><b>City</b></label>
+            <input ng-model="controller.appointment.city" placeholder="Enter City" name="city" required><br/>
+            <label><b>State</b></label>
+            <input ng-model="controller.appointment.state" placeholder="Enter State" name="state" required><br/>
+            <label><b>Phone Number</b></label>
+            <input ng-model="controller.appointment.phonenumber" placeholder="Enter Phone Number" name="phnumbr" required><br/>
+            <button class="btn" type="submit">Submit</button>
+            <button class="btn">Cancel</button>
+        </div>
+    </form>
+
+

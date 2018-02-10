@@ -1,0 +1,29 @@
+﻿<form class="form-group" ng-submit="controller.Additem()">
+    We have added online booking for your convenience.we are NOT able to cancel or reschedule an appointment via online booking. Please call the salon for assistance if you need to cancel an appointment or reschedule 800-111-1111.<br/>
+    <h2>Select Appointment Options:</h2>
+    <label>Select a Date:</label>
+    <input type="date" name="select a date" class="glyphicon glyphicon-calendar" /><br/>
+    <label>Select a Service:</label>
+    <select required ng-options="item.id as item.name for item in controller.items" ng-model="controller.item.id">
+        <option value="">----------------------</option> <!--empty value is needed  to display the text inside the option tags-->
+    </select><br/>
+    <label>Available Times:</label>
+    <select name="time" id="time">
+        <option value="">---</option>
+        <option value="9:00 AM">9:00 AM</option>
+        <option value="10:30 AM">10:30 AM</option>
+        <option value="11:00 AM">11:00 AM</option>
+        <option value="1:00 PM">1:00 PM</option>
+        <option value="2:30 PM">2:30 PM</option>
+        <option value="3:30 PM">3:30 PM</option>
+        <option value="4:45 PM">4:45 PM</option>
+        <option value="5:30 PM">5:30 PM</option>
+        <option value="6:45 PM">6:45 PM</option>
+        <option value="7:45 PM">7:45 PM</option>
+    </select><br />
+    <input type="submit" />
+</form>
+
+
+
+

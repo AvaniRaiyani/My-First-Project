@@ -1,0 +1,51 @@
+<html ng-app="AvanisHerbalSalon">
+<head>
+    <title>AvanisHerbalSalon</title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <base href="/" />
+   </head> 
+<body >
+    
+    <div class="container-fluid">
+        <h4>Schedule an Appointment Now: &#9742; (800)111-1111</h4>
+        <h1><img src="~/images/logo.jpg" height="80" width="80"/>Avani's Herbal Salon</h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li class="services">
+            <a href="javascript:void(0)" class="servicesbtn">Services</a>
+                <div class="services-content">
+                    <a href="/haircare">HairCare</a>
+                    <a href="/skincare">SkinCare</a>
+                    <a href="/massage">Massage</a>
+                    <a href="/nailcare">NailCare</a>
+                    </div>
+            <li><a href="/appointment">Book Appointment</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li style="float:right"><a class="glyphicon glyphicon-log-in" href="/Login"> Login</a></li>
+            <li style="float:right"><a class="glyphicon glyphicon-user" href="/Signup"> SignUp</a></li>
+        </ul>
+    </div> 
+
+        <ui-view></ui-view>
+
+
+        <!-- Library Files -->
+        <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-resource/angular-resource.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.js"></script>
+        <script src="/bower_components/angular-touch/angular-touch.js"></script>
+        <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+        <!-- App Files-->
+        <script src="/ngapp/app.js"></script>
+        <script src="/ngapp/controllers/controllers.js"></script>
+        <script src="/ngapp/services/services.js"></script>
+        <script src="~/Appointment.js"></script>
+        <script src="~/SlideShow.js"></script>
+
+</body>
+</html>

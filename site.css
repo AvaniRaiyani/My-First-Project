@@ -1,0 +1,237 @@
+body {
+    background-image: url(/images/background-salon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+td{
+    padding: 8px;
+    border-color:white;
+}
+
+th{
+    text-align:center;
+}
+
+.table{
+    width: 60%;
+    margin-top: 25px;
+    margin-bottom:25px;
+    margin-left:280px;
+    padding: 25px;
+    background-image:url(/images/background-services.jpg);
+    text-align:left;
+}
+
+.services-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 86px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 1;
+}
+    .services-content a {
+        color: black;
+        padding: 12px 6px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+        .services-content a:hover {
+            background-color: black;
+        }
+.services:hover .services-content {
+    display: block;
+}
+
+.container-fluid{
+  animation:pulse 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
+   animation-duration: 4s;
+   top: 0;
+}
+
+@keyframes pulse {
+    0%, 100% {background-color: yellowgreen;}
+    50% {background-color: violet;}
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing:border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: lightslategray;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border:thin;
+    cursor: pointer;
+    width: 20%;
+    color:black;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content{
+    text-align:center;
+    background-color: navajowhite;
+    margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid black;
+    width: 85%; /* Could be more or less, depending on screen size */
+    font-weight: bold;
+}
+
+.image2{
+    position:absolute;
+   margin-left:1050px;
+   margin-top: 25px;
+}
+
+h5{
+ position:absolute;
+    top: 60px;
+    left:30px;
+    text-align:center;
+    font-size: 15px;
+}
+.image{
+    position: absolute; 
+    margin-left:350px;
+    margin-top:38px;
+    margin-bottom:38px;
+    }
+
+p{
+    text-align: center;
+    font-size: 16px;
+}
+
+h3{
+    position:absolute;
+    top: 40px;
+    left:20px;
+    right:20px;
+    text-align:left;
+    font-size: 15px;
+}
+h4 {
+    float:right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    font-size: 15px;
+    font-family: 'Segoe UI Symbol';
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover:not(.active) {
+    background-color: yellow;
+}
+div.gallery {
+  
+    margin: 20px;
+    border: 1px solid black;
+    width: 190px;
+    text-align:center;
+    float:right;
+}
+
+div.gallery:hover {
+    border: 1px solid black;
+}
+
+div.gallery img {
+    width: 100%;
+    height:200px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    background-color:black;
+    opacity:0.4;
+}
+h1{
+    font-family:'Imprint MT Shadow';
+    color: yellow;
+    font-weight:bold;
+    text-align:center;
+    padding-left: 320px;
+}
+
+h2{
+    text-align: center;
+}
+.contact{
+   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid black;
+    width: 60%; 
+    background-color: lightslategrey;
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid black;
+    width:60%; 
+    height:35%;
+    background-color: gold;
+    text-align: center;
+    font-weight: bold;
+}
+.login{
+     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid black;
+    width: 15%; 
+    height: 25%;
+    background-color:transparent;
+    text-align: center;
+}

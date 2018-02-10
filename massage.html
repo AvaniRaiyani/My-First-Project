@@ -1,0 +1,20 @@
+﻿<h2>Massage <img src="/images/massage.jpg" width="100" height="100" /></h2><table class="table table-striped">
+    <tbody>
+        <tr ng-repeat="m in controller.items">
+            <td>{{m.name}}</td>
+            <td>{{m.price}}</td>
+        </tr>
+    </tbody>
+</table>
+<form class="form-content" ng-submit="controller.addItem()">
+    <label>Service Name</label>
+    <input class="form-control" type="text" ng-model="controller.item.name" />
+    <label>Service Price</label>
+    <input class="form-control" type="text" ng-model="controller.item.price" />
+    <label>Service list</label>
+    <select class="form-control" required ng-options="cat.id as cat.name for cat in controller.categories" ng-model="controller.item.category.id">
+        <option value="">---Select from Service---</option> <!--empty value is needed to display the text inside the option tags. -->
+    </select>
+    <input type="submit" class="btn btn-primary" />
+    <button class="btn btn-xs" ui-sref="userDashborad">Cancel</button>
+</form>
